@@ -28,18 +28,16 @@ export function Sidebar() {
       {/* Profile Card */}
       <Card>
         <CardContent className="p-0">
-          <div className="relative">
+          <Link to={"/profile"} className="relative">
             <div className="h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-t-lg"></div>
             <Avatar className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-12 h-12 border-2 border-white">
               <img src={img} alt="img" />
               <AvatarFallback>JD</AvatarFallback>
             </Avatar>
-          </div>
+          </Link>
           <Link to={"/profile"} className="pt-8 pb-4 px-4 text-center">
             <h3 className="font-semibold text-gray-900">{profileData?.name}</h3>
-            <p className="text-sm text-gray-600 mt-1">
-              {profileData?.bio}
-            </p>
+            <p className="text-sm text-gray-600 mt-1">{profileData?.bio}</p>
             <div className="flex items-center justify-between mt-4 pt-4 border-t">
               <div className="text-center">
                 <p className="text-xs text-gray-500">Profile views</p>
