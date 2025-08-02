@@ -29,7 +29,7 @@ const cors = require("cors");
 
 let allowedOrigins = [
   "http://localhost:5173",
-  "https://linked-in-indol.vercel.app/",
+  "https://linked-in-indol.vercel.app",
 ];
 
 app.use(
