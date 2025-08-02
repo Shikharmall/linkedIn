@@ -23,12 +23,13 @@ if (process.env.DATABASE === "MONGODBATLAS") {
 
 app.use(cookieParser());
 
-app.use(express.json()); 
+app.use(express.json());
 
 const cors = require("cors");
 
 let allowedOrigins = [
   "http://localhost:5173",
+  "https://linked-in-indol.vercel.app/",
 ];
 
 app.use(
