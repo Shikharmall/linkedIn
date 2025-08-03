@@ -41,7 +41,10 @@ export function Feed() {
         </div>
       ) : (
         <>
-          {posts.map((post, index) => (
+          <div className="flex justify-center">
+            {posts?.length === 0 && <p>No posts found.</p>}
+          </div>
+          {posts?.map((post, index) => (
             <Post key={index} post={post} />
           ))}
         </>
