@@ -60,7 +60,7 @@ export default function LoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    console.log("helo");
+    
     userLoginAPI(formData).then((res) => {
       if (res.status === 200) {
         setIsLoading(false);
