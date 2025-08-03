@@ -50,8 +50,9 @@ export function CreatePost({ getAllPostsFunc }) {
 
             {isExpanded && (
               <div className="mt-4 space-y-4">
+
                 <div className="flex items-center justify-between">
-                  <div className="flex space-x-4">
+                  <div className="grid grid-cols-2 gap-2 sm:grid-cols-2 md:flex md:flex-row md:space-x-4">
                     <Button
                       variant="ghost"
                       size="sm"
@@ -87,7 +88,7 @@ export function CreatePost({ getAllPostsFunc }) {
                   </div>
                 </div>
 
-                <div className="flex justify-end space-x-2">
+                <div className="flex justify-start md:justify-end space-x-2">
                   <Button
                     variant="outline"
                     onClick={() => {
